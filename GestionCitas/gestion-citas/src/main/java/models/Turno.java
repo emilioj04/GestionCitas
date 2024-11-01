@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Date;
+
 public class Turno {
     private int id;
     private int idMedico;
@@ -63,7 +65,7 @@ public class Turno {
         this.idPaciente = 0;
         this.fecha = new Date();
         this.hora = new Date();
-        this.estado = Estado.PENDIENTE;
+        this.estado = Estado.RESERVADO;
     }
     public Turno(int id, int idMedico, int idPaciente, Date fecha, Date hora, Estado estado) {
         this.id = id;
